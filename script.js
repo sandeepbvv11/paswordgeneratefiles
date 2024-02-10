@@ -119,7 +119,7 @@ function generatePassword(length) {
   let password_string=""
   for (let iter=0;iter<length;iter++){
     let  random_index=Math.floor(Math.random()*temp_array.length);
-    console.log("temp",temp_array[random_index],random_index);
+    
     // Making sure that randome characters are selected only from the ones that the user set true.
     switch (temp_array[random_index]) {
       case 0:
